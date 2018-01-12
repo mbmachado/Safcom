@@ -1,0 +1,86 @@
+<!--
+  Generated template for the SchedulingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Solicite um caminhão</ion-title>
+    <button ion-button menuToggle right>
+      Menu
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Tipo de carga</ion-label>
+      <ion-input type="text" [(ngModel)]="summary.load_type" name="type"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Prazo de entrega</ion-label>
+      <ion-select [(ngModel)]="summary.deadline">
+
+        <ion-option>
+          1 dia
+        </ion-option>
+        <ion-option>
+          3 dias
+        </ion-option>
+        <ion-option>
+          1 Semana
+        </ion-option>
+        <ion-option>
+          2 Semanas
+        </ion-option>
+        <ion-option>
+          A combinar
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Peso</ion-label>
+      <ion-input [(ngModel)]="summary.wheight" type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Veículo</ion-label>
+      <ion-select [(ngModel)]="summary.type">
+
+        <ion-option>
+          Carro
+        </ion-option>
+        <ion-option>
+          Caminhão aberto
+        </ion-option>
+        <ion-option>
+          Caminhão refrigerado
+        </ion-option>
+        <ion-option>
+          Caminhão baú
+        </ion-option>
+        <ion-option>
+          Bitrem
+        </ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label floating>Descrição</ion-label>
+      <ion-textarea [(ngModel)]="summary.description" type="text"></ion-textarea>
+    </ion-item>
+
+    <ion-card  class="btn-next">
+      <button ion-button icon-right full (click)="itemTapped($event)">
+        Avançar
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-card>
+
+  </ion-list>
+</ion-content>

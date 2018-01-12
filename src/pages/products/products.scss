@@ -1,0 +1,45 @@
+page-products {
+  .item-ios [item-right] {
+    margin: 8px 0;
+  }
+
+  .folder {
+    position: relative;
+
+    .bar {
+      width: 100%;
+      background-color: transparentize(#000, 0.4);
+      color: #FFF;
+      position: absolute;
+      bottom: 0;
+      padding: 0 16px;
+
+      ion-card-title {
+        color: #FFF;
+        font-size: 1.8rem;
+      }
+
+      ion-icon {
+        float: right;
+      }
+    }
+  }
+
+  ion-item {
+    padding: 0 !important;
+  }
+
+  ion-label {
+    margin: 0 8px 0 0;
+  }
+
+  .select-label {
+    padding-left: 13px;
+  }
+
+  .cover {
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+  }
+}
